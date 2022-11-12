@@ -2,7 +2,7 @@ import socket
 import threading
 
 IP = ''
-PORT = 2001
+PORT = 2000
 
 server =  socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind((IP, PORT))        
