@@ -18,5 +18,4 @@ def send(msg):
     client.send(message)
 
 send('test from client')
-send('this is working')
 send(DISCONNECT_MESSAGE)
