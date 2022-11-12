@@ -3,7 +3,7 @@ import threading
 
 HEADER = 64
 IP = ''
-PORT = 2000
+PORT = 2001
 FORMAT = 'utf-8'
 DISCONNECT_MESSAGE = '!DISCONNECT'
 
@@ -23,7 +23,7 @@ def handle_client(conn,addr):
             if msg == DISCONNECT_MESSAGE:
                 connected = False
             print(f'[{addr}] {msg}')
-            conn.send("msg recieved".encode(FORMAT))
+            conn.send("[SERVER] msg recieved".encode(FORMAT))
     conn.close()
 
 def start():
