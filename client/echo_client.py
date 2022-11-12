@@ -2,7 +2,7 @@ import socket
 
 HEADER = 64
 IP = 'hub'
-PORT = 2000
+PORT = 2001
 FORMAT = 'utf-8'
 DISCONNECT_MESSAGE = '!DISCONNECT'
 
